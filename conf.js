@@ -12,12 +12,12 @@ jsproxy_config({
 
   // 节点配置
   node_map: {
-    'demo-hk': {
-      label: '韩国',
+    'ali-hk': {
+      label: '演示服务-阿里香港',
       lines: {
         // 主机:权重
-        '1166.tk:8443': 1,
-        //'node-aliyun-hk-2.etherdream.com:8443': 2,
+        'node-aliyun-hk-1.etherdream.com:8443': 1,
+        'node-aliyun-hk-2.etherdream.com:8443': 2,
       }
     },
     'demo-sg': {
@@ -26,15 +26,15 @@ jsproxy_config({
         'node-aliyun-sg.etherdream.com:8443': 1,
       },
     },
-    'mysite': {
-      label: '当前站点',
+    'kr': {
+      label: '韩国',
       lines: {
         'jsproxy.shigong.workers.dev:443': 1,
       }
     },
     // 该节点用于加载大体积的静态资源
     'cfworker': {
-      label: '',
+      label: 'cf',
       hidden: true,
       lines: {
         // 收费版（高权重）
@@ -53,7 +53,7 @@ jsproxy_config({
   /**
    * 默认节点
    */
-  node_default: 'mysite',
+  node_default: 'kr',
   // node_default: /jsproxy-demo\.\w+$/.test(location.host) ? 'demo-hk' : 'mysite',
 
   /**
