@@ -29,13 +29,13 @@ jsproxy_config({
     'kr': {
       label: '韩国',
       lines: {
-        'jsproxy.shigong.workers.dev:443': 1,
+        '1166.tk:443': 1,
       }
     },
     // 该节点用于加载大体积的静态资源
     'cfworker': {
       label: 'cf',
-      hidden: true,
+      hidden: false,
       lines: {
         // 收费版（高权重）
         'node-cfworker-2.etherdream.com': 4,
