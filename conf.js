@@ -24,7 +24,7 @@ jsproxy_config({
       label: '演示服务-新加坡节点',
       lines: {
         'node-aliyun-sg.etherdream.com:8443': 1,
-      },
+      }
     },
     'kr': {
       label: '韩国',
